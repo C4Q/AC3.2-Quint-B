@@ -10,31 +10,36 @@ import UIKit
 import TwicketSegmentedControl
 
 class MasterViewController: UIViewController {
-
-    @IBOutlet weak var switcher: UISegmentedControl!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /* Styling for Twicket -- properties to know
+         
+         defaultTextColor: UIColor - Text color for unselected segments
+         segmentsBackgroundColor: UIColor - Background color for unselected segments
+         highlightTextColor: UIColor - Text color for selected segment
+         sliderTextColor: UIColor - Background color for selected segment
+         font: UIFont - Set font
+         */
 
-        // Do any additional setup after loading the view.
+        let titles = ["Deaths", "Images", "Results"]
+        let frame = CGRect(x: 5, y: view.frame.height / 10, width: view.frame.width - 10, height: 40)
+        let segmentedControl = TwicketSegmentedControl(frame: frame)
+        segmentedControl.setSegmentItems(titles)
+        // font
+        segmentedControl.font = UIFont(name: "Georgia-Bold", size: 20)!
+        // colors for unselected segments
+        segmentedControl.defaultTextColor = .black
+        segmentedControl.segmentsBackgroundColor = .white
+        // colors for selected segments
+        segmentedControl.highlightTextColor = .white
+        segmentedControl.sliderBackgroundColor = .black
         
-        switcher.removeAllSegments()
-        switcher.insertSegment(withTitle: "Deaths", at: 0, animated: false)
-        switcher.insertSegment(withTitle: "Images", at: 1, animated: false)
-        switcher.insertSegment(withTitle: "Results", at: 2, animated: false)
-        //switcher.addTarget(self, action: touched, for: .valueChanged)
-        
-        //addTarget(self, action: #selector(selectionDidChange(_:)), for: .valueChanged)
-        
-        // Select First Segment
-        switcher.selectedSegmentIndex = 2
-        
-        
-    }
+        segmentedControl.delegate = self
+            
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        view.addSubview(segmentedControl)
     }
     
 
@@ -48,4 +53,10 @@ class MasterViewController: UIViewController {
     }
     */
 
+}
+
+extension MasterViewController: TwicketSegmentedControlDelegate {
+    func didSelect(_ segmentIndex: Int) {
+        print("Selected idex: \(segmentIndex)")
+    }
 }
