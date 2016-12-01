@@ -12,16 +12,26 @@
 		D365E2761DF0B17B000392FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D365E2741DF0B17B000392FD /* Main.storyboard */; };
 		D365E2781DF0B17B000392FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D365E2771DF0B17B000392FD /* Assets.xcassets */; };
 		D365E27B1DF0B17B000392FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D365E2791DF0B17B000392FD /* LaunchScreen.storyboard */; };
+		D39C08271DF0BFAD00157539 /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39C08261DF0BFAD00157539 /* AbstractViewController.swift */; };
+		D39C08291DF0BFC100157539 /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39C08281DF0BFC100157539 /* ImageTableViewController.swift */; };
+		D39C082B1DF0BFD500157539 /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39C082A1DF0BFD500157539 /* SearchResultTableViewController.swift */; };
+		E8BFBA75C76F46408A411D61 /* Pods_QuintB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0B37D40031164AB9C87136 /* Pods_QuintB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19B68CC2FE8C40408AA74FC1 /* Pods-QuintB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuintB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuintB/Pods-QuintB.debug.xcconfig"; sourceTree = "<group>"; };
+		C58ACC290D7EB34DADD38552 /* Pods-QuintB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuintB.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuintB/Pods-QuintB.release.xcconfig"; sourceTree = "<group>"; };
 		D365E26D1DF0B17B000392FD /* QuintB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuintB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D365E2701DF0B17B000392FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D365E2721DF0B17B000392FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D365E2751DF0B17B000392FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D365E2771DF0B17B000392FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D365E2771DF0B17B000392FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = QuintB/Assets.xcassets; sourceTree = "<group>"; };
 		D365E27A1DF0B17B000392FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D365E27C1DF0B17B000392FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D39C08261DF0BFAD00157539 /* AbstractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
+		D39C08281DF0BFC100157539 /* ImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
+		D39C082A1DF0BFD500157539 /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewController.swift; sourceTree = "<group>"; };
+		DA0B37D40031164AB9C87136 /* Pods_QuintB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuintB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BFBA75C76F46408A411D61 /* Pods_QuintB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FDD3B93EC70562DEE79C688 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA0B37D40031164AB9C87136 /* Pods_QuintB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D14EFFD6F67B52F7D2AAFEDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19B68CC2FE8C40408AA74FC1 /* Pods-QuintB.debug.xcconfig */,
+				C58ACC290D7EB34DADD38552 /* Pods-QuintB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D365E2641DF0B17B000392FD = {
 			isa = PBXGroup;
 			children = (
 				D365E26F1DF0B17B000392FD /* QuintB */,
 				D365E26E1DF0B17B000392FD /* Products */,
+				D14EFFD6F67B52F7D2AAFEDF /* Pods */,
+				9FDD3B93EC70562DEE79C688 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +85,50 @@
 			isa = PBXGroup;
 			children = (
 				D365E2701DF0B17B000392FD /* AppDelegate.swift */,
-				D365E2721DF0B17B000392FD /* ViewController.swift */,
+				D365E27C1DF0B17B000392FD /* Info.plist */,
+				D39C08251DF0B5B700157539 /* Services */,
+				D39C08241DF0B5AE00157539 /* Controller */,
+				D39C08221DF0B55A00157539 /* Model */,
+				D39C08231DF0B57300157539 /* View */,
+			);
+			path = QuintB;
+			sourceTree = "<group>";
+		};
+		D39C08221DF0B55A00157539 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D39C08231DF0B57300157539 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				D365E2741DF0B17B000392FD /* Main.storyboard */,
 				D365E2771DF0B17B000392FD /* Assets.xcassets */,
 				D365E2791DF0B17B000392FD /* LaunchScreen.storyboard */,
-				D365E27C1DF0B17B000392FD /* Info.plist */,
 			);
-			path = QuintB;
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D39C08241DF0B5AE00157539 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D365E2721DF0B17B000392FD /* ViewController.swift */,
+				D39C08261DF0BFAD00157539 /* AbstractViewController.swift */,
+				D39C08281DF0BFC100157539 /* ImageTableViewController.swift */,
+				D39C082A1DF0BFD500157539 /* SearchResultTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D39C08251DF0B5B700157539 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D365E27F1DF0B17B000392FD /* Build configuration list for PBXNativeTarget "QuintB" */;
 			buildPhases = (
+				8DFD28228363E158A014BA9F /* [CP] Check Pods Manifest.lock */,
 				D365E2691DF0B17B000392FD /* Sources */,
 				D365E26A1DF0B17B000392FD /* Frameworks */,
 				D365E26B1DF0B17B000392FD /* Resources */,
+				E79C8AB18383E7623E5A7AB9 /* [CP] Embed Pods Frameworks */,
+				54AB77137B1390DAE98F92E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +201,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54AB77137B1390DAE98F92E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuintB/Pods-QuintB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DFD28228363E158A014BA9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E79C8AB18383E7623E5A7AB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuintB/Pods-QuintB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D365E2691DF0B17B000392FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D365E2731DF0B17B000392FD /* ViewController.swift in Sources */,
+				D39C08271DF0BFAD00157539 /* AbstractViewController.swift in Sources */,
 				D365E2711DF0B17B000392FD /* AppDelegate.swift in Sources */,
+				D39C08291DF0BFC100157539 /* ImageTableViewController.swift in Sources */,
+				D39C082B1DF0BFD500157539 /* SearchResultTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +271,7 @@
 				D365E2751DF0B17B000392FD /* Base */,
 			);
 			name = Main.storyboard;
+			path = QuintB;
 			sourceTree = "<group>";
 		};
 		D365E2791DF0B17B000392FD /* LaunchScreen.storyboard */ = {
@@ -158,6 +280,7 @@
 				D365E27A1DF0B17B000392FD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = QuintB;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,6 +381,7 @@
 		};
 		D365E2801DF0B17B000392FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19B68CC2FE8C40408AA74FC1 /* Pods-QuintB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuintB/Info.plist;
@@ -270,6 +394,7 @@
 		};
 		D365E2811DF0B17B000392FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C58ACC290D7EB34DADD38552 /* Pods-QuintB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuintB/Info.plist;
@@ -299,6 +424,7 @@
 				D365E2811DF0B17B000392FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
