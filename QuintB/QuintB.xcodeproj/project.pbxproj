@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D365E2711DF0B17B000392FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365E2701DF0B17B000392FD /* AppDelegate.swift */; };
-		D365E2731DF0B17B000392FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365E2721DF0B17B000392FD /* ViewController.swift */; };
 		D365E2761DF0B17B000392FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D365E2741DF0B17B000392FD /* Main.storyboard */; };
 		D365E2781DF0B17B000392FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D365E2771DF0B17B000392FD /* Assets.xcassets */; };
 		D365E27B1DF0B17B000392FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D365E2791DF0B17B000392FD /* LaunchScreen.storyboard */; };
 		D39C08271DF0BFAD00157539 /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39C08261DF0BFAD00157539 /* AbstractViewController.swift */; };
 		D39C08291DF0BFC100157539 /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39C08281DF0BFC100157539 /* ImageTableViewController.swift */; };
 		D39C082B1DF0BFD500157539 /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39C082A1DF0BFD500157539 /* SearchResultTableViewController.swift */; };
+		D39C08301DF0C7B400157539 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39C082F1DF0C7B400157539 /* MasterViewController.swift */; };
 		E8BFBA75C76F46408A411D61 /* Pods_QuintB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0B37D40031164AB9C87136 /* Pods_QuintB.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +23,6 @@
 		C58ACC290D7EB34DADD38552 /* Pods-QuintB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuintB.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuintB/Pods-QuintB.release.xcconfig"; sourceTree = "<group>"; };
 		D365E26D1DF0B17B000392FD /* QuintB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuintB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D365E2701DF0B17B000392FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D365E2721DF0B17B000392FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D365E2751DF0B17B000392FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D365E2771DF0B17B000392FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = QuintB/Assets.xcassets; sourceTree = "<group>"; };
 		D365E27A1DF0B17B000392FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 		D39C08261DF0BFAD00157539 /* AbstractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
 		D39C08281DF0BFC100157539 /* ImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
 		D39C082A1DF0BFD500157539 /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewController.swift; sourceTree = "<group>"; };
+		D39C082F1DF0C7B400157539 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		DA0B37D40031164AB9C87136 /* Pods_QuintB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuintB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,10 +116,8 @@
 		D39C08241DF0B5AE00157539 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D365E2721DF0B17B000392FD /* ViewController.swift */,
-				D39C08261DF0BFAD00157539 /* AbstractViewController.swift */,
-				D39C08281DF0BFC100157539 /* ImageTableViewController.swift */,
-				D39C082A1DF0BFD500157539 /* SearchResultTableViewController.swift */,
+				D39C082F1DF0C7B400157539 /* MasterViewController.swift */,
+				D39C082C1DF0C05B00157539 /* Child Views of Master */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -129,6 +127,16 @@
 			children = (
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		D39C082C1DF0C05B00157539 /* Child Views of Master */ = {
+			isa = PBXGroup;
+			children = (
+				D39C08261DF0BFAD00157539 /* AbstractViewController.swift */,
+				D39C08281DF0BFC100157539 /* ImageTableViewController.swift */,
+				D39C082A1DF0BFD500157539 /* SearchResultTableViewController.swift */,
+			);
+			name = "Child Views of Master";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D365E2731DF0B17B000392FD /* ViewController.swift in Sources */,
+				D39C08301DF0C7B400157539 /* MasterViewController.swift in Sources */,
 				D39C08271DF0BFAD00157539 /* AbstractViewController.swift in Sources */,
 				D365E2711DF0B17B000392FD /* AppDelegate.swift in Sources */,
 				D39C08291DF0BFC100157539 /* ImageTableViewController.swift in Sources */,
